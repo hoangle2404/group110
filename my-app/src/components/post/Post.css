@@ -1,0 +1,50 @@
+.add {
+    border-radius: 80%;
+    background-color: rgb(236, 151, 165);
+    width: 85px;
+    height: 85px;
+   
+    margin-left: 93%;
+    position: relative;
+    overflow: hidden;
+    border-color: lightcoral;
+}
+
+.add:hover {
+    background-color: rgb(248, 203, 210);
+}
+
+.add span {
+    height: 5px;
+    width: 50%;
+    background-color: black;
+    position: absolute;
+    border-radius: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease; /* Apply transition for smooth hover effect */
+}
+
+.add span:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+/* When hovering over the button, apply styles to the spans */
+button:hover span {
+    height: 10px; /* Increase height */
+    width: 75%;  /* Increase width */
+    background-color: red; /* Change color */
+}
+
+
+/* Hover effect for the entire post container */
+.list-group-item:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.list-group-item {
+    background-color: lightcyan;
+    cursor: pointer;
+}
